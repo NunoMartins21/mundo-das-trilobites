@@ -3,22 +3,27 @@
 
 /* Geral */
 
-a, a:visited {
+body {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+a,
+a:visited {
     color: black;
 }
 
 /* Correções */
 
 .fp-controlArrow.fp-prev {
-    left: 2.5% !important;
-    font-size: 38pt;
+    left: 3% !important;
+    font-size: 34pt;
     color: white;
     border: none !important;
 }
 
 .fp-controlArrow.fp-next {
-    right: 2.5% !important;
-    font-size: 38pt;
+    right: 3% !important;
+    font-size: 34pt;
     width: auto;
     color: white;
     border: none !important;
@@ -29,19 +34,22 @@ a, a:visited {
 #main {
     width: 90%;
     margin: 0 5%;
+    display: flex;
+    align-items: center;
 }
 
 #text-main {
     display: flex;
     align-items: center;
+    position: relative;
+    bottom: 5%;
 }
 
 #text-main h1 {
     position: absolute;
     left: -20%;
     z-index: -999;
-    opacity: 0.05;
-    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    opacity: 0.075;
     font-size: 17vw;
     font-weight: 600;
     width: 1000vw;
@@ -51,7 +59,6 @@ a, a:visited {
     position: relative;
     z-index: 999;
     left: 10%;
-    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     font-weight: 700;
     font-size: 40pt;
     width: 45%;
@@ -59,11 +66,11 @@ a, a:visited {
 }
 
 #button-down {
-    width: 80%;
+    width: 100%;
     display: flex;
     justify-content: center;
-    position: relative;
-    top: 15%;
+    position: absolute;
+    bottom: 5%;
 }
 
 #button-down .fa-angle-down {
@@ -82,20 +89,86 @@ a, a:visited {
 
 /* Sliders */
 
+.slide {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 28pt;
+}
+
 #slide1 {
     background: linear-gradient(to right, #1E3C72, #2A5298);
-    background: #1e3c72; /* Old browsers */
-    background: -moz-linear-gradient(-45deg,  #1e3c72 0%, #2a5298 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(-45deg,  #1e3c72 0%,#2a5298 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(135deg,  #1e3c72 0%,#2a5298 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e3c72', endColorstr='#2a5298',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    background: #1e3c72;
+    background: -moz-linear-gradient(-45deg, #1e3c72 0%, #2a5298 100%);
+    background: -webkit-linear-gradient(-45deg, #1e3c72 0%, #2a5298 100%);
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e3c72', endColorstr='#2a5298', GradientType=1);
 
 }
 
 #slide2 {
-    background: #38ef7d; /* Old browsers */
-    background: -moz-linear-gradient(-45deg, #38ef7d 0%, #11998e 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(-45deg, #38ef7d 0%,#11998e 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(135deg, #38ef7d 0%,#11998e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#38ef7d', endColorstr='#11998e',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    background: #38ef7d;
+    background: -moz-linear-gradient(-45deg, #38ef7d 0%, #11998e 100%);
+    background: -webkit-linear-gradient(-45deg, #38ef7d 0%, #11998e 100%);
+    background: linear-gradient(135deg, #38ef7d 0%, #11998e 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#38ef7d', endColorstr='#11998e', GradientType=1);
+}
+
+#creditos {
+    background: #414345;
+    background: -moz-linear-gradient(-45deg, #414345 0%, #232526 100%);
+    background: -webkit-linear-gradient(-45deg, #414345 0%, #232526 100%);
+    background: linear-gradient(135deg, #414345 0%, #232526 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#414345', endColorstr='#232526', GradientType=1);
+
+    color: white;
+}
+
+/* Responsividade */
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+    #text-main h3 {
+        font-size: 36pt;
+    }
+
+    #img-main {
+        right: -30%;
+    }
+}
+
+/* Custom */
+@media only screen and (max-width : 879px) {
+    #img-main {
+        right: -40%;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    #img-main {
+        display: none;
+    }
+
+    #text-main h1 {
+        font-size: 22.5vw;
+    }
+
+    #text-main h3 {
+        text-align: center;
+        width: 80%;
+        margin: 0 10%;
+        left: 0;
+        line-height: 65px;
+        font-size: 32pt;
+    }
+
+    .fp-controlArrow.fp-prev {
+        font-size: 28pt;
+    }
+
+    .fp-controlArrow.fp-next {
+        font-size: 28pt;
+    }
 }

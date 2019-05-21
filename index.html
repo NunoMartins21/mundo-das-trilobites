@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +10,8 @@
     <!-- Primary Meta Tags -->
     <title>Mundo Das Trilobites</title>
     <meta name="title" content="Mundo Das Trilobites">
-    <meta name="description" content="Bem vindo ao fantástico mundo das trilobites, os seres marinhos mais fascinantes do Paleozóico! Vem descobrir todas as informações e curiosidades sobre estes seres que dominaram os mares paleozóicos!">
+    <meta name="description"
+        content="Bem vindo ao fantástico mundo das trilobites, os seres marinhos mais fascinantes do Paleozóico! Vem descobrir todas as informações e curiosidades sobre estes seres que dominaram os mares paleozóicos!">
     <meta name="robots" content="index, follow">
     <meta name="language" content="Portuguese">
     <meta name="author" content="Nuno Martins">
@@ -18,15 +20,27 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.mundodastrilobites.com/">
     <meta property="og:title" content="Mundo Das Trilobites">
-    <meta property="og:description" content="Bem vindo ao fantástico mundo das trilobites, os seres marinhos mais fascinantes do Paleozóico! Vem descobrir todas as informações e curiosidades sobre estes seres que dominaram os mares paleozóicos!">
+    <meta property="og:description"
+        content="Bem vindo ao fantástico mundo das trilobites, os seres marinhos mais fascinantes do Paleozóico! Vem descobrir todas as informações e curiosidades sobre estes seres que dominaram os mares paleozóicos!">
     <meta property="og:image" content="">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://www.mundodastrilobites.com/">
     <meta property="twitter:title" content="Mundo Das Trilobites">
-    <meta property="twitter:description" content="Bem vindo ao fantástico mundo das trilobites, os seres marinhos mais fascinantes do Paleozóico! Vem descobrir todas as informações e curiosidades sobre estes seres que dominaram os mares paleozóicos!">
+    <meta property="twitter:description"
+        content="Bem vindo ao fantástico mundo das trilobites, os seres marinhos mais fascinantes do Paleozóico! Vem descobrir todas as informações e curiosidades sobre estes seres que dominaram os mares paleozóicos!">
     <meta property="twitter:image" content="">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-43850690-4"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-43850690-4');
+    </script>
 
     <!-- Styles -->
     <link rel="stylesheet" href="styles/reset.css">
@@ -36,14 +50,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.5/fullpage.min.css">
 
     <!-- FontAwesome CDN -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+    <!-- Animate.css CDN -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
+
     <!-- Javascript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.5/fullpage.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/fullpage.js@3.0.5/dist/fullpage.extensions.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/joaopereirawd/animatedModal.js/animatedModal.min.js"></script>
     <script src="js/script.js"></script>
 </head>
+
 <body>
     <div id="fullpage">
         <section class="section" id="main">
@@ -53,14 +73,15 @@
             </div>
             <img id="img-main" src="images/img-main.png" alt="Main image">
             <div id="button-down">
-                <a href="#info"><i class="fas fa-angle-down"></i></a>
+                <i id="btn" class="fas fa-angle-down"></i>
             </div>
         </section>
-        <section class="section" data-anchor="info">
-            <div id="slide1" class="slide" data-anchor="slide1"> Slide 1 </div>
-            <div id="slide2" class="slide" data-anchor="slide2"> Slide 2 </div>
-            <div id="slide3" class="slide" data-anchor="creditos"> Slide 2 </div>
+        <section class="section">
+            <div id="slide1" class="slide" data-anchor="trilobites">Em breve</div>
+            <div id="slide2" class="slide" data-anchor="arouca">Em breve</div>
+            <div id="creditos" class="slide" data-anchor="creditos">Em breve</div>
         </section>
     </div>
 </body>
+
 </html>

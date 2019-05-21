@@ -1,0 +1,101 @@
+/* Fontes */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500,600,700&display=swap');
+
+/* Geral */
+
+a, a:visited {
+    color: black;
+}
+
+/* Correções */
+
+.fp-controlArrow.fp-prev {
+    left: 2.5% !important;
+    font-size: 38pt;
+    color: white;
+    border: none !important;
+}
+
+.fp-controlArrow.fp-next {
+    right: 2.5% !important;
+    font-size: 38pt;
+    width: auto;
+    color: white;
+    border: none !important;
+}
+
+/* --- */
+
+#main {
+    width: 90%;
+    margin: 0 5%;
+}
+
+#text-main {
+    display: flex;
+    align-items: center;
+}
+
+#text-main h1 {
+    position: absolute;
+    left: -20%;
+    z-index: -999;
+    opacity: 0.05;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 17vw;
+    font-weight: 600;
+    width: 1000vw;
+}
+
+#text-main h3 {
+    position: relative;
+    z-index: 999;
+    left: 10%;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 40pt;
+    width: 45%;
+    line-height: 75px;
+}
+
+#button-down {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 15%;
+}
+
+#button-down .fa-angle-down {
+    font-size: 40pt;
+    cursor: pointer;
+}
+
+/* Images */
+
+#img-main {
+    position: absolute;
+    top: 0;
+    right: -20%;
+    height: 100vh;
+}
+
+/* Sliders */
+
+#slide1 {
+    background: linear-gradient(to right, #1E3C72, #2A5298);
+    background: #1e3c72; /* Old browsers */
+    background: -moz-linear-gradient(-45deg,  #1e3c72 0%, #2a5298 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg,  #1e3c72 0%,#2a5298 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg,  #1e3c72 0%,#2a5298 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e3c72', endColorstr='#2a5298',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+
+#slide2 {
+    background: #38ef7d; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #38ef7d 0%, #11998e 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #38ef7d 0%,#11998e 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #38ef7d 0%,#11998e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#38ef7d', endColorstr='#11998e',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}

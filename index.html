@@ -62,6 +62,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.5/fullpage.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/fullpage.js@3.0.5/dist/fullpage.extensions.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/joaopereirawd/animatedModal.js/animatedModal.min.js"></script>
+    <script src="js/modernizr-custom.js"></script>
     <script src="js/script.js"></script>
 </head>
 
@@ -72,15 +73,29 @@
                 <h3>BEM VINDO AO FANTÁSTICO MUNDO DAS TRILOBITES</h3>
                 <h1>T R I L O B I T E S</h1>
             </div>
-            <img id="img-main" src="images/img-main.png" alt="Main image">
+            <img id="img-main" data-png="images/img-main.png" data-webp="images/img-main.webp" alt="Imagem principal">
             <div id="button-down">
                 <i id="btn" class="fas fa-angle-down"></i>
             </div>
         </section>
         <section class="section">
-            <div id="slide1" class="slide" data-anchor="trilobites">Em breve</div>
-            <div id="slide2" class="slide" data-anchor="arouca">Em breve</div>
-            <div id="creditos" class="slide" data-anchor="creditos">Em breve</div>
+            <div id="trilobites" class="slide left-info" data-anchor="trilobites">
+                <div id="bg-trilobites" class="bg-sliders"></div>
+                <div id="content-trilobites" class="content-sliders">
+                    <h3>O QUE SÃO TRILOBITES?</h3>
+                </div>
+            </div>
+            <div id="arouca" class="slide right-info" data-anchor="arouca">
+                <div id="bg-arouca" class="bg-sliders"></div>
+                <div id="content-arouca" class="content-sliders">
+                    <h3>AS TRILOBITES DE AROUCA</h3>
+                </div>
+            </div>
+            <div id="creditos" class="slide center-info" data-anchor="creditos">
+                <div id="content-creditos" class="content-sliders">
+                    <h3>TRABALHO REALIZADO POR</h3>
+                </div>
+            </div>
         </section>
     </div>
 </body>

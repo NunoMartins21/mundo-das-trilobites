@@ -58,7 +58,8 @@ a:visited {
     left: 10%;
     font-weight: 700;
     font-size: 40pt;
-    width: 45%;
+    width: 40%;
+    margin-right: 5%;
     line-height: 75px;
 }
 
@@ -87,30 +88,125 @@ a:visited {
 /* Sliders */
 
 .slide {
-    display: flex !important;
+    position: relative;
+    display: block !important;
+    /*
     align-items: center;
     justify-content: center;
+    */
     color: white;
     font-size: 28pt;
 }
 
-#slide1 {
+.bg-sliders {
+    height: 100%;
+    width: 35%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content-sliders {
+    width: 55%;
+    height: 87%;
+}
+
+.content-sliders h3 {
+    font-weight: bold;
+    width: fit-content;
+}
+
+.content-sliders h3:after {
+    content: " ";
+    margin-top: 10px;
+    display: block;
+    width: 45%;
+    height: 6px;
+    background-color: white;
+}
+
+.left-info .bg-sliders {
+    float: left;
+}
+
+.left-info .content-sliders {
+    margin: 3% 7.5% 3% 2.5%;
+    float: right;
+}
+
+.left-info .content-sliders h3:after {
+    margin-left: 55%;
+}
+
+.right-info .bg-sliders {
+    float: right;
+}
+
+.right-info .content-sliders {
+    margin: 3% 2.5% 3% 7.5%;
+}
+
+.right-info .content-sliders h3:after {
+    margin-right: 55%;
+}
+
+.center-info .content-sliders {
+    width: 85%;
+    height: 90%;
+    margin: 3% 7.5%;
+}
+
+.center-info .content-sliders h3 {
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+}
+
+.center-info .content-sliders h3:after {
+    width: 30%;
+    margin: 10px 35% 0 35%
+}
+
+/* Slider Trilobites */
+
+#trilobites{
     background: linear-gradient(to right, #1E3C72, #2A5298);
     background: #1e3c72;
     background: -moz-linear-gradient(-45deg, #1e3c72 0%, #2a5298 100%);
     background: -webkit-linear-gradient(-45deg, #1e3c72 0%, #2a5298 100%);
     background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e3c72', endColorstr='#2a5298', GradientType=1);
-
 }
 
-#slide2 {
+.webp #bg-trilobites {
+    background-image: url("../images/img-trilobites.webp");
+}
+
+.no-webp #bg-trilobites {
+    background-image: url("../images/img-trilobites.jpg");
+}
+
+/* Slider Arouca */
+
+#arouca {
     background: #38ef7d;
     background: -moz-linear-gradient(-45deg, #38ef7d 0%, #11998e 100%);
     background: -webkit-linear-gradient(-45deg, #38ef7d 0%, #11998e 100%);
     background: linear-gradient(135deg, #38ef7d 0%, #11998e 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#38ef7d', endColorstr='#11998e', GradientType=1);
 }
+
+.webp #bg-arouca {
+    background-image: url("../images/img-arouca.webp");
+}
+
+.no-webp #bg-arouca {
+    background-image: url("../images/img-arouca.jpg");
+}
+
+/* Slider final */
 
 #creditos {
     background: #414345;
@@ -140,6 +236,14 @@ a:visited {
     #img-main {
         right: -40%;
     }
+
+    .content-sliders h3 {
+        font-size: 24pt;
+    }
+
+    .content-sliders h3:after {
+        margin-top: 6px;
+    }
 }
 
 /* Small Devices, Tablets */
@@ -159,6 +263,48 @@ a:visited {
         left: 0;
         line-height: 65px;
         font-size: 32pt;
+    }
+
+    /* Sliders */
+
+    .bg-sliders {
+        display: none;
+    }
+    
+    .content-sliders {
+        width: 85%;
+        height: 85%;
+        margin: 7.5%;
+    }
+    
+    .content-sliders h3 {
+        font-weight: bold;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .content-sliders h3:after {
+        margin-top: 10px;
+        width: 50%;
+        height: 6px;
+    }
+
+    .left-info .bg-sliders, .right-info .bg-sliders {
+        clear: both;
+    }
+    
+    .left-info .content-sliders, .right-info .content-sliders, .center-info .content-sliders {
+        clear: both;
+        margin: 7.5%;
+    }
+    
+    .left-info .content-sliders h3:after, .right-info .content-sliders h3:after {
+        margin-left: 25%;
+    }
+
+    .center-info .content-sliders h3:after {
+        width: 50%;
+        margin: 10px 25% 0 25%
     }
 
     .fp-controlArrow.fp-prev {

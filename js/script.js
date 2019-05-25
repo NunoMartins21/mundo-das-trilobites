@@ -5,7 +5,11 @@ $(document).ready(function () {
 		scrollHorizontally: true,
 		dragAndMove: true,
 		verticalCentered: false,
-		licenseKey: `p]yaoTk')T<GZKU6N;'i H|8p[L0C)kT]T~Gf+vVt53|e-jq`
+		licenseKey: `p]yaoTk')T<GZKU6N;'i H|8p[L0C)kT]T~Gf+vVt53|e-jq`,
+		scrollOverflow: true,
+		normalScrollElements: '.content-sliders',
+		normalScrollElementTouchThreshold: 5,
+        keyboardScrolling: true
 	});
 
 	// Adicionar classe às setas
@@ -21,7 +25,8 @@ $(document).ready(function () {
 
 Modernizr.on('webp', function (result) {
 	var imgs = [
-		document.getElementById('img-main')
+		document.getElementById('img-main'),
+		document.getElementById('logo-aelc')
 	];
 	
 	for (var i = 0; i < imgs.length; i++) {

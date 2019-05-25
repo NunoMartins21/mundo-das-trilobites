@@ -9,6 +9,17 @@ a:visited {
     color: black;
 }
 
+.text-creditos a, .text-creditos a:visited {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
 /* Correções */
 
 .fp-controlArrow.fp-prev {
@@ -116,6 +127,7 @@ a:visited {
 .content-sliders h3 {
     font-weight: bold;
     width: 100%;
+    margin-bottom: 10%;
 }
 
 .content-sliders h3:after {
@@ -133,13 +145,25 @@ a:visited {
     font-weight: 500;
     line-height: 26px;
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-    position: relative;
-    top: 5%;
     text-overflow: ellipsis;
 }
 
 .content-sliders .text p {
     margin: 15px 0;
+}
+
+.content-sliders .text-creditos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.content-sliders .text-creditos img {
+    width: 7;
+    height: auto;
+    margin-top: 15px;
 }
 
 .left-info .bg-sliders {
@@ -351,6 +375,7 @@ a:visited {
         font-weight: bold;
         width: 100%;
         text-align: center !important;
+        margin-bottom: 10%;
     }
     
     .content-sliders h3:after {
@@ -378,5 +403,12 @@ a:visited {
 
     .fp-controlArrow.fp-next {
         font-size: 28pt;
+    }
+}
+
+@media only screen and (max-width : 459px) {
+    .content-sliders .text-creditos img {
+        width: 85%;
+        margin: 15px 7.5% 0 7.5%;
     }
 }

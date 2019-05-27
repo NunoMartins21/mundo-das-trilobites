@@ -7,7 +7,7 @@ $(document).ready(function () {
 		verticalCentered: false,
 		licenseKey: `p]yaoTk')T<GZKU6N;'i H|8p[L0C)kT]T~Gf+vVt53|e-jq`,
 		scrollOverflow: true,
-		normalScrollElements: '.content-sliders',
+		normalScrollElements: '.slider',
 		normalScrollElementTouchThreshold: 5,
         keyboardScrolling: true
 	});
@@ -26,7 +26,8 @@ $(document).ready(function () {
 Modernizr.on('webp', function (result) {
 	var imgs = [
 		document.getElementById('img-main'),
-		document.getElementById('logo-aelc')
+		document.getElementById('logo-aelc'),
+		document.getElementById('img-trilobite')
 	];
 	
 	for (var i = 0; i < imgs.length; i++) {

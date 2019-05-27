@@ -152,6 +152,11 @@ ul {
     margin: 15px 0;
 }
 
+.content-sliders .img-slider {
+    width: 80%;
+    margin: 5% 10%;
+}
+
 .content-sliders .text-creditos {
     display: flex;
     flex-direction: column;
